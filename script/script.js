@@ -12,7 +12,7 @@ document.querySelectorAll('.slider .banner').forEach(function(element){
     element.style.width = document.querySelector('.slider').offsetWidth+'px';
     element.style.height = element.offsetWidth/3+'px';
 });
-window.onresize = function(){location.reload()};
+// window.onresize = function(){location.reload()};
 $('.slider').slick({
     autoplay:true,
     autoplaySpeed:3000,
