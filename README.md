@@ -1,2 +1,2 @@
-# [Nёllのホームページ](index.html)
+# [Nёllのホームページ](https://nrnell.github.io/)
 Nёllのホームページです。
