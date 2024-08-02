@@ -25,3 +25,7 @@ $('.slider').slick({
     pauseOnFocus:false,
     pauseOnHover:false,
 });
+
+// let local = {};
+// if(!localStorage.hasOwnProperty('local')){localStorage.setItem('local',JSON.stringify(local));};
+// local = JSON.parse(localStorage.getItem('local'));
