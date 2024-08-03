@@ -1,6 +1,9 @@
-html,body {margin:0;padding:0;width:100%;height:100%;}
+html,body {margin:0;padding:0;width:100%;height:100%;font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";}
 main {background:skyblue;position:relative;width:100%;height:100%;}
-header {background:white;position:absolute;top:0;width:100%;height:6vh;}
+header {background:white;position:absolute;top:0;width:100%;height:9vh;}
+a:link,a:visited,a:hover,a:active{text-decoration:none;}
+.title {color:#466398;position:absolute;font-size:calc(9vh/2);top:0;bottom:0;left:18vh;margin:auto;}
+.back {background:#466398;color:white;position:absolute;border-radius:50%;font-size:calc(9vh/2);display:flex;justify-content:center;align-items:center;text-align:center;z-index:1;top:calc(9vh/2);left:calc(9vh/2);width:9vh;height:9vh;}
 .btns {position:absolute;top:0;bottom:0;right:10vh;margin:auto;width:40vw;height:calc(100vh/3*2);display:grid;grid-template-columns:repeat(18,1fr);grid-template-rows:repeat(5,1fr);grid-column-gap:0;grid-row-gap:0;transform:skewX(-10deg);}
 .btn0 {grid-area:1/1/3/10;}
 .btn1 {grid-area:1/10/3/19;}
