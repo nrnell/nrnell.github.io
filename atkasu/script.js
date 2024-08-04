@@ -1,1 +1,0 @@
-document.querySelector('.bgm').play();
