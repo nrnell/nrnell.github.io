@@ -19,6 +19,6 @@ a:link,a:visited,a:hover,a:active{text-decoration:none;}
 .cnp7 {grid-area:3/15/5/19;}
 .cnp8 {grid-area:5/7/6/13;}
 .cnp9 {grid-area:5/13/6/19;}
-.cnpM * {color:#466398;text-shadow:0 0 0.5vh rgba(255,255,255,1);font-weight:bold;white-space:nowrap;overflow:hidden;border-radius:1vh;margin:1vh;}
-.cnpX * {position:relative;box-shadow:0 0 1vh rgba(0,0,0,0.5);overflow:hidden;border-radius:1vh;margin:1vh;}
-div img {position:absolute;object-fit:cover;top:-3vh;left:-3vh;margin:0;width:calc(100% + 4vh);height:calc(100% + 4vh);transform:skewX(10deg);display:flex;justify-content:center;align-items:center;}
+.cnpM * {background:linear-gradient(180deg,rgba(255,255,255,0.75),transparent);color:#466398;text-shadow:0 0 1vh rgba(255,255,255,1);font-weight:bold;white-space:nowrap;overflow:hidden;border-radius:1vh;margin:1vh;}
+.cnpX * {position:relative;box-shadow:0.5vh 0.5vh 0.5vh rgba(0,0,0,0.5);overflow:hidden;border-radius:1vh;margin:1vh;}
+div img {position:absolute;object-fit:cover;top:-1.25vh;left:-3vh;margin:0;width:calc(100% + 4vh);height:calc(100% + 0.5vh);transform:skewX(10deg);display:flex;justify-content:center;align-items:center;}
