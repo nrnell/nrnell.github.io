@@ -1,3 +1,3 @@
-import numpy
+import discord
 
-print(numpy.random.randint(1,7,1))
+print('Python')
