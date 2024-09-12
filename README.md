@@ -1,1 +1,1 @@
-<a href="https://nrnell.github.io/" target="_blank"><img src="https://nrnell.github.io/asset/banner/guild.png" alt=""/></a>
+<a href="https://nrnell.github.io/" target="_blank"><img src="https://nrnell.github.io/asset/banner/plana.png" alt=""/></a>
