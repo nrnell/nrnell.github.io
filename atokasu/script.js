@@ -1,3 +1,2 @@
 const audio = document.querySelector('audio');
-audio.volume = 0.25;
-window.onmouseover = function(){audio.play()};
+window.onmouseover = function(){audio.volume=0.25;audio.play();};
