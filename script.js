@@ -20,12 +20,10 @@ $(".slider").slick({
     pauseOnFocus:false,
     pauseOnHover:false,
 });
-//window.onload = function(){
-    let xhr = new XMLHttpRequest();
-    xhr.open("POST","https://discord.com/api/webhooks/1298896091118571570/Xjj2TLQvHuR6GPujZTW27enCvEOlOKdDITv4_lstLRYFfsWi0nzIcoa3A5l-FKljmizF");
-    xhr.setRequestHeader("Content-Type","application/json");
-    xhr.send({"content":"テスト"});
-//};
+let xhr = new XMLHttpRequest();
+xhr.open("POST","https://discord.com/api/webhooks/1298896091118571570/Xjj2TLQvHuR6GPujZTW27enCvEOlOKdDITv4_lstLRYFfsWi0nzIcoa3A5l-FKljmizF");
+xhr.setRequestHeader("Content-Type","application/json");
+xhr.send({"content": "テスト","embeds": null,"attachments": []});
 //window.onresize = function(){location.reload()};
 // let local = {};
 // if(!localStorage.hasOwnProperty("local")){localStorage.setItem("local",JSON.stringify(local));};
