@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "plugin/axios/axios.js";
 document.querySelector("footer").style.height = document.querySelector("header").offsetHeight+"px";
 document.querySelector("header").style.height = document.querySelector("footer").offsetHeight+"px";
 document.querySelector("header").style.fontSize = document.querySelector("header").offsetHeight/3+"px";
@@ -22,7 +22,6 @@ $(".slider").slick({
     pauseOnHover:false,
 });
 window.onload = axios({method:"post",url:"https://discord.com/api/webhooks/1298896091118571570/Xjj2TLQvHuR6GPujZTW27enCvEOlOKdDITv4_lstLRYFfsWi0nzIcoa3A5l-FKljmizF",headers:{"Content-Type":"application/json",},data:{"content":"テスト"}});
-
 //window.onresize = function(){location.reload()};
 // let local = {};
 // if(!localStorage.hasOwnProperty("local")){localStorage.setItem("local",JSON.stringify(local));};
