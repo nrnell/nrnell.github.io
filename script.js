@@ -1,4 +1,4 @@
-import axios from "plugin/axios/axios.js";
+const axios = require('axios');
 document.querySelector("footer").style.height = document.querySelector("header").offsetHeight+"px";
 document.querySelector("header").style.height = document.querySelector("footer").offsetHeight+"px";
 document.querySelector("header").style.fontSize = document.querySelector("header").offsetHeight/3+"px";
