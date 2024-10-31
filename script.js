@@ -1,13 +1,3 @@
-document.querySelector("footer").style.height = document.querySelector("header").offsetHeight+"px";
-document.querySelector("header").style.height = document.querySelector("footer").offsetHeight+"px";
-document.querySelector("header").style.fontSize = document.querySelector("header").offsetHeight/3+"px";
-document.querySelector("footer").style.gap = document.querySelector("header").offsetHeight/4+"px";
-document.querySelector("main").style.paddingTop = document.querySelector("header").offsetHeight+"px";
-document.querySelector(".slider").style.height = document.querySelector(".slider").offsetWidth/3+"px";
-document.querySelectorAll("footer svg").forEach(function(element){
-    element.style.width = document.querySelector("header").offsetHeight/4+"px";
-    element.style.height = document.querySelector("header").offsetHeight/4+"px";
-});
 $(".slider").slick({
     autoplay:true,
     autoplaySpeed:3000,
