@@ -7,7 +7,6 @@
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
         <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
         <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-        <py-config>packages = ["numpy","requests"]</py-config>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1"/>
         <meta name="theme-color" content="#FDA703">
@@ -25,7 +24,8 @@
         <meta name="twitter:title" content="Python"/>
         <meta name="twitter:description" content="PyScript is an open source platform for Python in the browser."/>
     </head>
-    <body style="margin:0;padding:0;">
+    <body>
+        <py-config>packages = ["numpy","requests"]</py-config>
         <py-script>
             import numpy,requests
             display("hello")
