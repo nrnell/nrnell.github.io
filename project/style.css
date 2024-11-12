@@ -1,5 +1,5 @@
 html {scroll-behavior:smooth;}
-body {background:#EEEEEE;color:#888888;}
+body {background:#EEEEEE;color:#666666;}
 pre {text-wrap:wrap;line-height:2;margin:1%;padding:1%;}
 h1,h2,h3 {font-weight:1000;}
 h1 {font-size:300%;}
@@ -7,3 +7,7 @@ h2 {font-size:200%;}
 h3 {font-size:150%;}
 b {font-size:125%;}
 p {border:calc(1vh/2) solid #DDDDDD;border-radius:2vh;padding:2vh;}
+table {border-collapse:separate;border-radius:2vh;width:100%;text-align:center;}
+tr,td {border:calc(1vh/2) solid #DDDDDD;border-radius:2vh;padding:calc(1%/4) 1%;}
+table tr:first-child {background:#CCCCCC;}
+tr td:first-child {text-align:left;}
