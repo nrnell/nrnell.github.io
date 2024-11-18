@@ -2,6 +2,6 @@ html,body {background:#EEEEEE;color:#666666;scroll-behavior:smooth;overflow-x:hi
 pre {text-wrap:wrap;line-height:2;margin:1%;padding:1%;} p {border:calc(1vh/2) solid #DDDDDD;border-radius:2vh;margin:0;padding:2vh;}
 h1,h2,h3,span {font-weight:1000;} h1 {font-size:300%;} h2 {font-size:200%;} h3 {font-size:150%;} span {font-size:125%;}
 div {overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:none;scrollbar-width:none;} div::-webkit-scrollbar {display:none;}
-table {border-collapse:separate;border-radius:2vh;text-align:center;width:90vmax;min-width:100%;}
+table {border-collapse:separate;border-radius:2vh;text-align:center;width:100vh;min-width:100%;}
 tr,th,td {border:calc(1vh/2) solid #DDDDDD;border-radius:2vh;padding:calc(1%/4) 1%;}
 th {background:#CCCCCC;} tr *:first-child {position:sticky;text-align:left;}
