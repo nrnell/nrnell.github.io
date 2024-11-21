@@ -4,4 +4,4 @@ h1,h2,h3,span {font-weight:1000;} h1 {font-size:300%;} h2 {font-size:200%;} h3 {
 div {overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:none;scrollbar-width:none;} div::-webkit-scrollbar {display:none;}
 table {border-collapse:separate;border-radius:2vh;text-align:center;width:125vh;min-width:100%;}
 tr,th,td {border:calc(1vh/2) solid #DDDDDD;border-radius:2vh;white-space:pre;padding:calc(1%/4) 1%;}
-th {background:#CCCCCC;} tr *:first-child {position:sticky;text-align:left;}
+th {background:#CCCCCC;} tr *:first-child {text-align:left;}
