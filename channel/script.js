@@ -4,6 +4,7 @@ local = JSON.parse(localStorage.getItem("local"));
 while (!local.name) {local.name = window.prompt("ユーザー名")};
 document.querySelectorAll("#uuid").forEach((element) => element.value = local.uuid);
 document.querySelectorAll("#name").forEach((element) => element.value = local.name);
+function submitted() {document.querySelectorAll("#content").forEach((element) => element.value = "");};
 const loading = () => {
     setTimeout(async () => {
         var main = "";
