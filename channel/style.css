@@ -1,6 +1,6 @@
 html,body {scroll-behavior:smooth;overflow:hidden;margin:0;padding:0;}
 .overflow {-webkit-overflow-scrolling:touch;-ms-overflow-style:none;scrollbar-width:none;} .overflow::-webkit-scrollbar {display:none;}
-.overflow-x {overflow-x:auto;} .overflow-y {overflow-y:auto;}
+.overflow-x {overflow-x:scroll;} .overflow-y {overflow-y:scroll;}
 .comment {background:#313338;color:#FFFFFF;height:100vh;max-height:100%;padding:1vmax 1vmin;}
 #comment {width:100%;padding:1vmin 1vmax;} #comment * {margin:0;padding:1vmax 1vmin;}
 #color {background:none;appearance:none;border:none;border-radius:50%;width:2em;height:2em;padding:0;}
