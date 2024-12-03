@@ -24,13 +24,13 @@
         <meta name="twitter:description" content="Test">
     </head>
     <body>
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSd2QVGHG3AQlcQH9PTMKAAhdP1Z2rkXBo16T5ZrCC-lBTtMmg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted()">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSd2QVGHG3AQlcQH9PTMKAAhdP1Z2rkXBo16T5ZrCC-lBTtMmg/formResponse" method="post" target="hidden_iframe">
             <input name="entry.1298106189" id="uuid" type="hidden" value="UUID">
             <input name="entry.1544820426" id="name" type="hidden" value="NAME">
             <input name="entry.256499354" id="color" type="color" value="#673AB7">
             <textarea name="entry.1025751365" id="content" maxlength="2000" required></textarea>
             <input id="submit" type="submit" value="送信">
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="submitted()"></iframe>
         </form>
         <main></main>
         <script src="script.js"></script>
