@@ -1,6 +1,18 @@
-d3.csv("https://docs.google.com/spreadsheets/d/1e3fnVHZJwgZs2d06o05_bzvfef2Z5ALpJnBfvyaqGyA/export?format=csv&range=A3:D",function(error,data){
-    //var main="";
-    //for(var i=0;i<data.length;i++){main+=i+1+" 名前: "+data[i].username+" "+data[i].timestamp+"<pre>"+data[i].message+"</pre>";}
-    //d3.select("main").html(main);
-    console.log(data);
-});
+let session = {"uuid":crypto.randomUUID(),"name":""};
+if (!sessionStorage.hasOwnProperty("session")) {sessionStorage.setItem("session",JSON.stringify(session));};
+session = JSON.parse(sessionStorage.getItem("session"));
+while (!session.name) {session.name = window.prompt("ユーザー名")};
+document.querySelectorAll("#uuid").forEach((element) => element.value = session.uuid);
+document.querySelectorAll("#name").forEach((element) => element.value = session.name);
+const loading = () => {
+    setTimeout(async () => {
+        var main = "";
+        var comment = await fetch("https://sheets.googleapis.com/v4/spreadsheets/1g7dS6R2nKWgLN_x8V3r9Q9Rfl51SFfkyDCIVuT15i-8/values/Responses?key=AIzaSyDh5OCWGGIs9l7q2L6zszjEklNGOyThr1M");
+        comment = await comment.json();
+        comment = comment.values;
+        for (let i=1;i<comment.length;i++) {console.log(i);main+=`<b style="color:${comment[i][3]};">${comment[i][2]}</b><pre>${comment[i][4]}</pre>`;};
+        document.querySelector("main").innerHTML = main;
+        loading()
+    },1000)
+}
+loading()
