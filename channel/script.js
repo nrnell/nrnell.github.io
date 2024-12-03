@@ -10,12 +10,12 @@ document.querySelectorAll("#name").forEach(element=>element.value=local.name);
 function submitted() {document.querySelectorAll("#content").forEach(element=>element.value="");};
 function loading() {
     setTimeout(async () => {
-        var main = "";
-        var comment = await fetch("https://sheets.googleapis.com/v4/spreadsheets/1g7dS6R2nKWgLN_x8V3r9Q9Rfl51SFfkyDCIVuT15i-8/values/Responses?key=AIzaSyBRBSvIUhGf7hbYmcEz70aMNJWcxKq0ZZA");
-        comment = await comment.json();
-        comment = comment.values;
-        for (let i=1;i<comment.length;i++) {main+=`<b style="color:${comment[i][3]};">${comment[i][2]}</b><pre>${comment[i][4]}</pre>`;};
-        document.querySelector("main").innerHTML = main;
+        var comment = "";
+        var responses = await fetch("https://sheets.googleapis.com/v4/spreadsheets/1g7dS6R2nKWgLN_x8V3r9Q9Rfl51SFfkyDCIVuT15i-8/values/Responses?key=AIzaSyBRBSvIUhGf7hbYmcEz70aMNJWcxKq0ZZA");
+        responses = await responses.json();
+        responses = responses.values;
+        for (let i=1;i<responses.length;i++) {comment+=`<b style="color:${responses[i][3]};">${responses[i][2]}</b><pre>${responses[i][4]}</pre>`;};
+        document.querySelector(".comment #comment").innerHTML = comment;
         loading()
     },1000)
 }
