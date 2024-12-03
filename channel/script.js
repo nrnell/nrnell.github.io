@@ -1,7 +1,6 @@
 let local = {"uuid":crypto.randomUUID(),"name":""};
 if (!localStorage.hasOwnProperty("local")) {while(!local.name){local.name=window.prompt("ユーザー名");};localStorage.setItem("local",JSON.stringify(local));};
-while (length(local.name)>32) {while(!local.name){local.name=window.prompt("ユーザー名");localStorage.setItem("local",JSON.stringify(local));};}
-//!local.name && length(local.name)>32
+while (length(local.name)>32) {while(!local.name){local.name=window.prompt("ユーザー名");};localStorage.setItem("local",JSON.stringify(local));};
 local = JSON.parse(localStorage.getItem("local"));
 document.querySelectorAll("#uuid").forEach((element) => element.value = local.uuid);
 document.querySelectorAll("#name").forEach((element) => element.value = local.name);
