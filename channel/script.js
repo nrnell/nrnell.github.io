@@ -1,9 +1,9 @@
-let session = {"uuid":crypto.randomUUID(),"name":""};
-if (!sessionStorage.hasOwnProperty("session")) {sessionStorage.setItem("session",JSON.stringify(session));};
-session = JSON.parse(sessionStorage.getItem("session"));
-while (!session.name) {session.name = window.prompt("ユーザー名")};
-document.querySelectorAll("#uuid").forEach((element) => element.value = session.uuid);
-document.querySelectorAll("#name").forEach((element) => element.value = session.name);
+let local = {"uuid":crypto.randomUUID(),"name":""};
+if (!localStorage.hasOwnProperty("local")) {localStorage.setItem("local",JSON.stringify(local));};
+local = JSON.parse(localStorage.getItem("local"));
+while (!local.name) {local.name = window.prompt("ユーザー名")};
+document.querySelectorAll("#uuid").forEach((element) => element.value = local.uuid);
+document.querySelectorAll("#name").forEach((element) => element.value = local.name);
 const loading = () => {
     setTimeout(async () => {
         var main = "";
