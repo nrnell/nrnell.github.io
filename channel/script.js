@@ -20,3 +20,4 @@ function loading() {
     },1000)
 }
 loading()
+document.querySelector(".comment").showModal();
