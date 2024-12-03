@@ -3,6 +3,6 @@ html,body {scroll-behavior:smooth;overflow:hidden;margin:0;padding:0;}
 .overflow-x {overflow-x:auto;} .overflow-y {overflow-y:auto;}
 .comment {background:#313338;color:#FFFFFF;width:100%;padding:1vmin 1vmax;}
 .comment * {margin:0;padding:1vmax 1vmin;}
-#color {appearance:none;border:none;border-radius:50%;padding:0;}
+#color {appearance:none;border:none;border-radius:50%;width:2em;height:2em;padding:0;}
 #color::-webkit-color-swatch {border:none;border-radius:50%;padding:0;}
 #color::-webkit-color-swatch-wrapper {border:none;border-radius:50%;padding:0;}
