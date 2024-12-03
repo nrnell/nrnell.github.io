@@ -1,1 +1,4 @@
-html,body {scroll-behavior:smooth;overflow-x:hidden;margin:1vmin;}
+html,body {scroll-behavior:smooth;overflow:hidden;margin:1vmin;}
+.overflow {-webkit-overflow-scrolling:touch;-ms-overflow-style:none;scrollbar-width:none;} .overflow::-webkit-scrollbar {display:none;}
+.overflow-x {overflow-x:auto;} .overflow-y {overflow-y:auto;}
+.comment {background:#32373D;color:#FFFFFF;}

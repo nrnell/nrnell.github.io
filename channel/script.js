@@ -3,7 +3,7 @@ var latest = {"ver":version,"uuid":crypto.randomUUID()};
 if (!localStorage.hasOwnProperty("local")) {localStorage.setItem("local",JSON.stringify(latest));};
 var local = JSON.parse(localStorage.getItem("local"));
 if (!local.ver||local.ver!=version) {local=Object.assign(latest,local);local.ver=version;};
-while (!local.name||local.name.length>32) {local.name=window.prompt("ユーザー名");};
+while (!local.name||local.name.length>16) {local.name=window.prompt("ユーザー名");};
 localStorage.setItem("local",JSON.stringify(local));
 document.querySelectorAll("#uuid").forEach(element=>element.value=local.uuid);
 document.querySelectorAll("#name").forEach(element=>element.value=local.name);
@@ -15,7 +15,7 @@ function loading() {
         responses = await responses.json();
         responses = responses.values;
         for (let i=1;i<responses.length;i++) {comment+=`<b style="color:${responses[i][3]};">${responses[i][2]}</b><pre>${responses[i][4]}</pre>`;};
-        document.querySelector(".comment #comment").innerHTML = comment;
+        document.querySelector(".comment").innerHTML = comment;
         loading()
     },1000)
 }
