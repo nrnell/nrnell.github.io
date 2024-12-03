@@ -5,9 +5,9 @@ var local = JSON.parse(localStorage.getItem("local"));
 if (!local.ver||local.ver!=version) {local=Object.assign(latest,local);local.ver=version;};
 while (!local.name||local.name.length>32) {local.name=window.prompt("ユーザー名");};
 localStorage.setItem("local",JSON.stringify(local));
-document.querySelectorAll("#uuid").forEach((element) => element.value = local.uuid);
-document.querySelectorAll("#name").forEach((element) => element.value = local.name);
-function submitted() {document.querySelectorAll("#content").forEach((element) => element.value = "");};
+document.querySelectorAll("#uuid").forEach(element=>element.value=local.uuid);
+document.querySelectorAll("#name").forEach(element=>element.value=local.name);
+function submitted() {document.querySelectorAll("#content").forEach(element=>element.value="");};
 function loading() {
     setTimeout(async () => {
         var main = "";
