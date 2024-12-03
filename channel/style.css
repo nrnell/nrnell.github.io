@@ -6,4 +6,4 @@ html,body {scroll-behavior:smooth;overflow:hidden;margin:0;padding:0;}
 #color {background:none;appearance:none;border:none;border-radius:50%;width:2em;height:2em;padding:0;}
 #color::-webkit-color-swatch {border:none;border-radius:1em;padding:0;}
 #color::-webkit-color-swatch-wrapper {border:none;border-radius:1em;padding:0;}
-#content {background:none;border:none;width:100%;margin-left:1em;padding:0;}
+#content {background:none;color:#FFFFFF;border:none;width:100%;margin-left:1em;padding:0;}
