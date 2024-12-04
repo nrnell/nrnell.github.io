@@ -15,7 +15,8 @@ function loading() {
         responses = await responses.json();
         responses = responses.values;
         for (let i=1;i<responses.length;i++) {comment+=`<b style="color:${responses[i][3]};">${responses[i][2]}</b><pre>${responses[i][4]}</pre><br>`;};
-        document.querySelector("#comment").innerHTML = comment;
+        var section = document.querySelector("#comment");
+        if (section.innerHTML!=comment) {section.innerHTML=comment;section.lastElementChild.scrollIntoView();}
         loading()
     },1000)
 }
