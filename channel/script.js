@@ -22,3 +22,4 @@ function loading() {
 };
 loading();
 //document.onclick = event => {if(!event.target.closest("dialog")){closeModal();};};
+document.querySelector(".comment").showModal();
