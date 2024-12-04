@@ -21,4 +21,4 @@ function loading() {
     },1000)
 };
 loading();
-//document.onclick = event => {if(event.target.closest("dialog")===null){closeModal();};};
+//document.onclick = event => {if(!event.target.closest("dialog")){closeModal();};};
