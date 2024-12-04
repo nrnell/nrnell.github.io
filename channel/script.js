@@ -15,8 +15,9 @@ function loading() {
         responses = (await responses.json()).values;
         for (let i=1;i<responses.length;i++) {comment+=`<br><b style="color:${responses[i][3]};">${responses[i][2]}</b><pre>${responses[i][4]}</pre>`;};
         var section = document.querySelector("#comment");
-        if (section.innerHTML!=comment) {section.innerHTML=comment;section.lastElementChild.scrollIntoView();}
-        loading()
+        if (section.innerHTML!=comment) {section.innerHTML=comment;section.lastElementChild.scrollIntoView();};
+        loading();
     },1000)
-}
-loading()
+};
+loading();
+var dialog = document.querySelectorAll("dialog").forEach(element=>{element.onclick=event=>{if(event.target.closest("dialog")===null){element.close();};};element.close();});
