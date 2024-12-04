@@ -1,4 +1,4 @@
-html,body {scroll-behavior:smooth;overflow:hidden;margin:0;padding:0;}
+html,body {scroll-behavior:smooth;margin:0;padding:0;} * {overflow:hidden;}
 .overflow {-webkit-overflow-scrolling:touch;-ms-overflow-style:none;scrollbar-width:none;}
 .overflow::-webkit-scrollbar {display:none;} .xy {overflow:auto;}
 .x {overflow-x:auto;overflow-y:hidden;} .y {overflow-x:hidden;overflow-y:auto;}
