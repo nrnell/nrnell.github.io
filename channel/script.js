@@ -5,6 +5,7 @@ var local = JSON.parse(localStorage.getItem("local"));
 if (!local.ver||local.ver!=version) {local=Object.assign(latest,local);local.ver=version;};
 while (!local.name||local.name.length>16) {local.name=window.prompt("ユーザー名");};
 localStorage.setItem("local",JSON.stringify(local));
+document.querySelectorAll("dialog").forEach(element=>element.close());
 document.querySelectorAll("#uuid").forEach(element=>element.value=local.uuid);
 document.querySelectorAll("#name").forEach(element=>element.value=local.name);
 function submitted() {document.querySelectorAll("#content").forEach(element=>element.value="");};
@@ -20,6 +21,4 @@ function loading() {
     },1000)
 };
 loading();
-function closeModal() {document.querySelectorAll("dialog").forEach(element=>element.close());};
-document.onclick = event => {if(event.target.closest("dialog")===null){closeModal();};};
-closeModal();
+//document.onclick = event => {if(event.target.closest("dialog")===null){closeModal();};};
