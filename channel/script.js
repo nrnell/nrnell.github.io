@@ -20,4 +20,6 @@ function loading() {
     },1000)
 };
 loading();
-var dialog = document.querySelectorAll("dialog").forEach(element=>{element.onclick=event=>{if(event.target.closest("dialog")===null){element.close();};};element.close();});
+function closeModal() {document.querySelectorAll("dialog").forEach(element=>element.close());};
+document.onclick = event => {if(event.target.closest("dialog")===null){closeModal();};};
+closeModal();
