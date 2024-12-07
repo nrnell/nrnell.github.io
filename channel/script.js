@@ -24,4 +24,3 @@ function loading() {
 loading();
 //document.onclick = event => {if(!event.target.closest("dialog")){closeModal();};};
 document.querySelector(".comment").showModal();
-fetch("https://discord.com/api/webhooks/1314897759719002144/sCdoEyy4iS-8UAk60ronZd7G63nO7MX0bwJxZsDpsQTdndyzo--R2i0p0aYSDdzE75S5",{method:"post",headers:{"Content-type":"application/json"},body:JSON.stringify({"username":"GitHub Pages","content":`[**${document.title}**](<${location.href}>) がアクセスされました。`}),})
