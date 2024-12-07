@@ -1,5 +1,4 @@
-require("dotenv").config();
-const env = process.env;
+const apikey = "AIzaSyBRBSvIUhGf7hbYmcEz70aMNJWcxKq0ZZA";
 const version = "β";
 var latest = {"ver":version,"uuid":crypto.randomUUID()};
 if (!localStorage.hasOwnProperty("local")) {localStorage.setItem("local",JSON.stringify(latest));};
@@ -14,7 +13,7 @@ function submitted() {document.querySelectorAll("#content").forEach(element=>ele
 function loading() {
     setTimeout(async () => {
         var comment = "";
-        var responses = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/1g7dS6R2nKWgLN_x8V3r9Q9Rfl51SFfkyDCIVuT15i-8/values/Responses?key=${env.google}`);
+        var responses = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/1g7dS6R2nKWgLN_x8V3r9Q9Rfl51SFfkyDCIVuT15i-8/values/Responses?key=${apikey}`);
         responses = (await responses.json()).values;
         for (let i=1;i<responses.length;i++) {comment+=`<br><b style="color:${responses[i][3]};">${responses[i][2]}</b> <span style="color:#949BA4;">${responses[i][0]}</span><pre>${responses[i][4]}</pre>`;};
         var section = document.querySelector("#comment");
@@ -25,3 +24,4 @@ function loading() {
 loading();
 //document.onclick = event => {if(!event.target.closest("dialog")){closeModal();};};
 document.querySelector(".comment").showModal();
+fetch("https://discord.com/api/webhooks/1314897759719002144/sCdoEyy4iS-8UAk60ronZd7G63nO7MX0bwJxZsDpsQTdndyzo--R2i0p0aYSDdzE75S5",{method:"post",headers:{"Content-type":"application/json"},body:JSON.stringify({"username":"GitHub Pages","content":`[**${document.title}**](<${location.href}>) がアクセスされました。`}),})
