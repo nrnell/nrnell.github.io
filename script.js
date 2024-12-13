@@ -10,7 +10,7 @@ $(".slider").slick({
     pauseOnFocus:false,
     pauseOnHover:false,
 });
-//window.onresize = function(){location.reload()};
+// window.onresize = function(){location.reload()};
 // let local = {};
 // if(!localStorage.hasOwnProperty("local")){localStorage.setItem("local",JSON.stringify(local));};
 // local = JSON.parse(localStorage.getItem("local"));
