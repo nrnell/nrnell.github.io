@@ -4,10 +4,11 @@ a:link,a:visited,a:hover,a:active{color:inherit;text-decoration:none;}
 .overflow {-webkit-overflow-scrolling:touch;-ms-overflow-style:none;scrollbar-width:none;}
 .overflow::-webkit-scrollbar {display:none;} .xy {overflow:auto;}
 .x {overflow-x:auto;overflow-y:hidden;} .y {overflow-x:hidden;overflow-y:auto;}
-.comment {background:#313338;color:#FFFFFF;border:none;border-radius:1em;padding:1vmax 1vmin;}
+.comment {background:#313338;color:#FFFFFF;border:none;border-radius:1rem;padding:1vmax 1vmin;}
 #comment {width:90vw;height:70vh;padding:1vmin 1vmax;} #comment > * {margin:0;padding:1vmax 1vmin;}
-#comment pre * {max-width:100%;} #comment pre a {color:#00AAFC;} #comment pre a:hover {text-decoration:underline;}
-#color {background:none;appearance:none;border:none;border-radius:50%;width:2em;height:2em;padding:0;}
-#color::-webkit-color-swatch {border:none;border-radius:1em;padding:0;}
-#color::-webkit-color-swatch-wrapper {border:none;border-radius:1em;padding:0;}
-#content {background:none;color:#FFFFFF;border:none;width:100%;margin-left:1em;padding:0;}
+#comment pre * {max-width:100%;margin:0;padding:0;border-radius:1rem;}
+#comment pre a {color:#00AAFC;} #comment pre a:hover {text-decoration:underline;}
+#color {background:none;appearance:none;border:none;border-radius:50%;width:2rem;height:2rem;padding:0;}
+#color::-webkit-color-swatch {border:none;border-radius:1rem;padding:0;}
+#color::-webkit-color-swatch-wrapper {border:none;border-radius:1rem;padding:0;}
+#content {background:none;color:#FFFFFF;border:none;width:100%;margin-left:1rem;padding:0;}
