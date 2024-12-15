@@ -1,15 +1,19 @@
-const apikey = "AIzaSyBRBSvIUhGf7hbYmcEz70aMNJWcxKq0ZZA";
 const version = "β";
-var latest = {"ver":version,"uuid":crypto.randomUUID()};
-if (!localStorage.hasOwnProperty("local")) {localStorage.setItem("local",JSON.stringify(latest));};
+const latest = {"ver":version,"uuid":crypto.randomUUID()};
+const apikey = "AIzaSyBRBSvIUhGf7hbYmcEz70aMNJWcxKq0ZZA";
+function autoStorage(value) {localStorage.setItem("local",JSON.stringify(value));};
+if (!localStorage.hasOwnProperty("local")) {autoStorage(latest);};
 var local = JSON.parse(localStorage.getItem("local"));
 if (!local.ver||local.ver!=version) {local=Object.assign(latest,local);local.ver=version;};
 while (!local.name||local.name.length>16) {local.name=window.prompt("ユーザー名");};
-localStorage.setItem("local",JSON.stringify(local));
-document.querySelectorAll("dialog").forEach(element=>element.close());
+while (!local.color) {local.color="#FFFFFF";};
+autoStorage(local);
 document.querySelectorAll("#uuid").forEach(element=>element.value=local.uuid);
 document.querySelectorAll("#name").forEach(element=>element.value=local.name);
-function submitted() {document.querySelectorAll("#content").forEach(element=>element.value="");};
+document.querySelectorAll("#color").forEach(element=>element.value=local.color);
+function closeModal() {document.querySelectorAll("dialog[open]").forEach(element=>element.close());};
+document.onclick = event => {if(!event.target.closest("dialog")){closeModal();};};
+function submitted() {document.querySelector(".comment #content").value="";local.color=document.querySelector(".comment #color").value;autoStorage(local);};
 function loading() {
     setTimeout(async () => {
         var comment = "";
@@ -22,5 +26,4 @@ function loading() {
     },1000)
 };
 loading();
-//document.onclick = event => {if(!event.target.closest("dialog")){closeModal();};};
 document.querySelector(".comment").showModal();
