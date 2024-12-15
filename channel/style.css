@@ -1,4 +1,4 @@
-body {background:#2B2D31;margin:0;padding:0;} * {overflow:hidden;}
+body {background:#FFFFFF00;margin:0;padding:0;} * {overflow:hidden;}
 dialog[open]::backdrop {background:#000000B3;}
 a:link,a:visited,a:hover,a:active{color:inherit;text-decoration:none;}
 .overflow {-webkit-overflow-scrolling:touch;-ms-overflow-style:none;scrollbar-width:none;}

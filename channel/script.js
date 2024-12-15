@@ -11,8 +11,8 @@ autoStorage(local);
 document.querySelectorAll("#uuid").forEach(element=>element.value=local.uuid);
 document.querySelectorAll("#name").forEach(element=>element.value=local.name);
 document.querySelectorAll("#color").forEach(element=>element.value=local.color);
-function closeModal() {document.querySelectorAll("dialog[open]").forEach(element=>element.close());};
-document.onclick = event => {if(!event.target.closest("dialog")){closeModal();};};
+function closeModal() {document.querySelectorAll("dialog").forEach(element=>element.close());};
+document.onclick = event => {if(!event.target.closest("dialog[open]")){closeModal();};};
 function submitted() {document.querySelector(".comment #content").value="";local.color=document.querySelector(".comment #color").value;autoStorage(local);};
 function loading() {
     setTimeout(async () => {
