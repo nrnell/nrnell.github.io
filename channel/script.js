@@ -19,7 +19,7 @@ function loading() {
         var comment = "";
         var responses = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/1g7dS6R2nKWgLN_x8V3r9Q9Rfl51SFfkyDCIVuT15i-8/values/Responses?key=${apikey}`);
         responses = (await responses.json()).values;
-        for (let i=1;i<responses.length;i++) {comment+=`<div><b style="color:${responses[i][3]};">${responses[i][2]}</b><span> ${responses[i][0].slice(0,-3)} </span></div><pre>${responses[i][4].replace("<","&lt;")}</pre><br>`;};
+        for (let i=1;i<responses.length;i++) {comment+=`<div><b style="color:${responses[i][3]};">${responses[i][2].replaceAll("<","&lt;").replaceAll(">","&gt;")}</b><span> ${responses[i][0].slice(0,-3)} </span></div><pre>${responses[i][4].replaceAll("<","&lt;").replaceAll(">","&gt;")}</pre><br>`;};
         var section = document.querySelector("#comment");
         if (section.innerHTML!=comment) {section.innerHTML=comment;section.lastElementChild.scrollIntoView();};
         loading();
