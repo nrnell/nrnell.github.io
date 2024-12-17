@@ -12,9 +12,10 @@ a:link,a:visited,a:hover,a:active{color:inherit;text-decoration:none;}
 #comment > div {display:flex;justify-content:flex-start;}
 #comment > div b {white-space:nowrap;text-overflow:ellipsis;margin-right:0.5rem;}
 #comment > div span {color:#949BA4;flex:none;font-size:0.75rem;margin:auto 0;}
-#comment > pre {white-space:pre-wrap;overflow-wrap:break-word;font-size:1rem;margin:0;padding:0;}
-#comment > pre * {border-radius:1rem;width:100%;}
-#comment > pre a {color:#00AAFC;} #comment > pre a:hover {text-decoration:underline;}
+#comment > code {white-space:pre-wrap;overflow-wrap:break-word;font-size:1rem;}
+#comment > code * {border-radius:1rem;}
+#comment > code a {color:#00AAFC;}
+#comment > code a:hover {text-decoration:underline;}
 #color {background:none;appearance:none;border:none;border-radius:50%;width:2rem;height:2rem;}
 #color::-webkit-color-swatch {border:none;border-radius:1rem;}
 #color::-webkit-color-swatch-wrapper {border:none;border-radius:1rem;}
