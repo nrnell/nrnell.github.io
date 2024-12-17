@@ -7,7 +7,7 @@ a:link,a:visited,a:hover,a:active{color:inherit;text-decoration:none;}
 .x {overflow-x:auto;overflow-y:hidden;} .y {overflow-x:hidden;overflow-y:auto;}
 .comment {background:#313338;color:#FFFFFF;}
 .comment .dialog {padding-top:1rem;}
-#comment {width:75vw;height:75vh;margin:0;padding:0;}
+#comment {width:75vw;height:75vh;margin:0;padding:0 1rem;}
 #comment > * {margin:0;padding:0;}
 #comment > div {display:flex;justify-content:flex-start;}
 #comment > div b {white-space:nowrap;text-overflow:ellipsis;margin-right:0.5rem;}
