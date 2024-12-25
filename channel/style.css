@@ -14,9 +14,8 @@ a:link,a:visited,a:hover,a:active{color:inherit;text-decoration:none;}
 #comment > div span {color:#949BA4;flex:none;font-size:0.75rem;margin:auto 0;}
 #comment > p {white-space:pre-wrap;overflow-wrap:break-word;font-size:1rem;}
 #comment > p * {border-radius:1rem;}
-#comment > p a {color:#00AAFC;}
-#comment > p a:hover {text-decoration:underline;}
-#color {background:none;appearance:none;border:none;border-radius:50%;width:2rem;height:2rem;}
+#comment > p a {color:#00AAFC;} #comment > p a:hover {text-decoration:underline;}
+#color {background:none;appearance:none;outline:none;border:none;border-radius:50%;width:2rem;height:2rem;}
 #color::-webkit-color-swatch {border:none;border-radius:1rem;}
 #color::-webkit-color-swatch-wrapper {border:none;border-radius:1rem;}
-#content {background:none;color:#FFFFFF;border:none;width:100%;}
+#content {background:none;color:#FFFFFF;outline:none;border:none;width:100%;}
