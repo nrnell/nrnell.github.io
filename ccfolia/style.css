@@ -5,4 +5,4 @@ div {overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:none;sc
 table {border-collapse:separate;border-radius:2vh;text-align:center;width:125vh;min-width:100%;}
 tr,th,td {border:calc(1vh/2) solid #3B3B3B;border-radius:2vh;white-space:pre;padding:calc(1%/4) 1%;}
 p,td {background:#2A2A2A;} tr *:first-child {text-align:left;}
-.new {border:calc(1vh/2) solid #DC004E;}
+.new,tr.new td {border:calc(1vh/2) solid #DC004E;}
