@@ -1,8 +1,0 @@
-html,body {background:#202020;color:#FFFFFF;scroll-behavior:smooth;overflow-x:hidden;}
-pre {text-wrap:wrap;line-height:2;margin:1%;padding:1%;} p {border:calc(1vh/2) solid #3B3B3B;border-radius:2vh;margin:0;padding:2vh;}
-h1,h2,h3,span {font-weight:1000;} h1 {font-size:300%;} h2 {font-size:200%;} h3 {font-size:150%;} span {font-size:125%;}
-div {overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:none;scrollbar-width:none;} div::-webkit-scrollbar {display:none;}
-table {border-collapse:separate;border-radius:2vh;text-align:center;width:125vh;min-width:100%;}
-tr,th,td {border:calc(1vh/2) solid #3B3B3B;border-radius:2vh;white-space:pre;padding:calc(1%/4) 1%;}
-p,td {background:#2A2A2A;} tr *:first-child {text-align:left;} .new,tr.new td {border:calc(1vh/2) solid #DC004E;}
-[ruby] {position:relative;} [ruby]::before {position:absolute;content:attr(ruby);font-size:0.5rem;top:5%;text-align:center;}
