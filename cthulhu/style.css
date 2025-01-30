@@ -5,7 +5,7 @@ div {overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:none;sc
 table {border-collapse:separate;border-radius:1.5rem;text-align:center;width:125vh;min-width:100%;}
 tr,th,td {border:0.3rem solid #BCA466;border-radius:1.5rem;white-space:pre;padding:calc(1%/4) 1%;}
 th {background:#BCA4667F;} tr *:first-child {text-align:left;}
-.new {position:relative;} .new::before {position:absolute;content:url(assets/images/new_flag.svg);top:-0.3rem;left:-0.3rem;width:3rem;height:3rem;}
+.new {overflow:hidden;position:relative;} .new::before {content:url(assets/images/new_flag.svg);position:absolute;top:0;left:0;width:3rem;height:3rem;}
 a:link,a:visited,a:hover,a:active {color:#47689A;text-decoration:none;margin:0 0.1em;}
 a::before {background:center/cover url(assets/images/icon_tag-blue.svg);display:inline-block;content:'';margin:0 0.1em -0.1em 0;width:0.8em;height:0.8em;}
 [ruby] {position:relative;} [ruby]::before {position:absolute;content:attr(ruby);white-space:nowrap;text-align:center;top:-100%;left:-25%;font-size:0.5em;width:150%;}
