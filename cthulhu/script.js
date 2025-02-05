@@ -3,4 +3,4 @@ pre.innerHTML = pre.innerHTML.replaceAll(/\|([^|《》]+)《([^|《》]+)》/g,`
 document.querySelectorAll('h1,h2,h3,span:not([id])').forEach(element=>element.id=element.innerText);
 // document.querySelectorAll('[id]').forEach(element=>element.innerHTML=`<a href="#${element.id}">${element.innerText}</a>`);
 document.querySelectorAll('[id]').forEach(element=>element.onclick=navigator.clipboard.writeText(`https://nrnell.github.io/${location.pathname}#${element.id}`));
-element=>pre.innerHTML=pre.innerHTML.replaceAll(`＃${element.id}`,`<a href="#${element.id}">${element.id}</a>`));
+document.querySelectorAll('[id]').forEach(element=>pre.innerHTML=pre.innerHTML.replaceAll(`＃${element.id}`,`<a href="#${element.id}">${element.id}</a>`));
