@@ -10,5 +10,3 @@ a:link,a:visited,a:hover,a:active {color:#47689A;text-decoration:none;margin:0 0
 a::before {background:center/cover url(assets/images/icon_tag-blue.svg);display:inline-block;content:'';margin:0 0.1em -0.1em 0;width:0.8em;height:0.8em;}
 [ruby] {position:relative;} [ruby]::before {position:absolute;content:attr(ruby);white-space:nowrap;text-align:center;top:-100%;left:-25%;font-size:0.5em;width:150%;}
 [id]::before {padding-top:1rem;visibility:hidden;}
-.mermaid {display:inline;} summary {display:block;}
-summary::-webkit-details-marker {display:none;}
