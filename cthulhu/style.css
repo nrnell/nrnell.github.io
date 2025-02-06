@@ -1,7 +1,7 @@
 html,body {background:center/cover url(assets/images/background.png);color:#000000;scroll-behavior:smooth;scroll-padding-top:calc(10rem/3);overflow-x:hidden;}
 pre {text-wrap:wrap;line-height:2;margin:1%;padding:1%;} p {border:calc(1em/3) solid #BCA466;border-radius:calc(5em/3);margin:0;padding:calc(5em/3);}
 h1,h2,h3,span {color:#545456;font-weight:1000;} h1 {font-size:300%;} h2 {font-size:200%;} h3 {font-size:150%;} span {font-size:125%;}
-div:has(table) {overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:none;scrollbar-width:none;} div::-webkit-scrollbar {display:none;}
+div {overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:none;scrollbar-width:none;} div::-webkit-scrollbar {display:none;}
 table {border-collapse:separate;border-radius:calc(5em/3);text-align:center;width:calc(100vh/9*12);min-width:100%;}
 tr,th,td {border:calc(1em/3) solid #BCA466;border-radius:calc(5em/3);white-space:pre;padding:calc(1%/4) calc(5em/3);}
 th {background:#BCA4667F;} tr>*:first-child {text-align:left;} .gry {color:#545456;}
