@@ -14,4 +14,4 @@ details>summary>div:first-of-type,details[open]>summary>div:last-of-type {displa
 details[open]>summary>div:first-of-type,details>summary>div:last-of-type {display:none;}
 summary {display:block;} summary::-webkit-details-marker {display:none;}
 details>img {border-radius:calc(5em/3);width:100vh;max-width:100%;} * {outline:none;}
-input[type="checkbox"] {accent-color:#BCA466;}
+/* input[type="checkbox"] {accent-color:#BCA466;} */
