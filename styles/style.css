@@ -1,4 +1,4 @@
-@font-face {font-family:LOT;src:url(assets/lot.otf) format("opentype");}
+@font-face {font-family:LOT;src:url(../assets/lot.otf) format("opentype");}
 html {scroll-behavior:smooth;}
 body {background:#000000;color:#FFFFFF;margin:0;padding:0;}
 header {background:#000000;position:fixed;display:flex;justify-content:center;align-items:center;z-index:1;width:100%;height:15vh;font-family:LOT;font-size:5vh;}
