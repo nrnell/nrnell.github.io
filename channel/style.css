@@ -1,0 +1,21 @@
+body {background:#00000000;margin:0;padding:0;} * {overflow:hidden;}
+dialog {border:none;border-radius:1rem;padding:0;}
+dialog[open]::backdrop {background:#000000B3;}
+a:link,a:visited,a:hover,a:active{color:inherit;text-decoration:none;}
+.overflow {-webkit-overflow-scrolling:touch;-ms-overflow-style:none;scrollbar-width:none;}
+.overflow::-webkit-scrollbar {display:none;} .xy {overflow:auto;}
+.x {overflow-x:auto;overflow-y:hidden;} .y {overflow-x:hidden;overflow-y:auto;}
+.comment {background:#313338;color:#FFFFFF;}
+.comment .dialog > hr {border:none;border-top:1px solid #393A40;margin:0;}
+#comment {width:75vw;height:125vmin;max-height:75vh;margin:0;padding:0 1rem;}
+#comment > * {margin:0;padding:0;}
+#comment > div {display:flex;justify-content:flex-start;}
+#comment > div b {white-space:nowrap;text-overflow:ellipsis;margin-right:0.5rem;}
+#comment > div span {color:#949BA4;flex:none;font-size:0.75rem;margin:auto 0;}
+#comment > p {white-space:pre-wrap;overflow-wrap:break-word;font-size:1rem;}
+#comment > p * {border-radius:1rem;}
+#comment > p a {color:#00AAFC;} #comment > p a:hover {text-decoration:underline;}
+#color {background:none;appearance:none;outline:none;border:none;border-radius:50%;width:2rem;height:2rem;}
+#color::-webkit-color-swatch {border:none;border-radius:1rem;}
+#color::-webkit-color-swatch-wrapper {border:none;border-radius:1rem;}
+#content {background:none;color:#FFFFFF;outline:none;border:none;width:100%;}
