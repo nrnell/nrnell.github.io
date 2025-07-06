@@ -1,1 +1,4 @@
-html,body {background:top/cover url(/assets/image/kotimatu/background.png);color:#000000;scroll-behavior:smooth;overflow-x:hidden;}
+html {scroll-behavior:smooth;}
+body {background:#050949;color:#FFFFFF;margin:0;padding:0;}
+main {display:inline-block;text-wrap:wrap;line-height:2;margin:1em;padding:0;font-family:sans-serif;}
+.keyword.border {background:#322E7B;margin:0;padding:1em;}
